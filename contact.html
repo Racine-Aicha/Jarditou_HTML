@@ -11,9 +11,9 @@
     <h3>La qualité depuis 70 ans</h3>
 
     <ul>
-        <li><a href="#" title="vers L'Accueil">Accueil</a></li>
-        <li><a href="#" title="vers Le Tableau">Tableau</a></li>
-        <li><a href="#" title="vers Le Contact">Contact</a></li>
+        <li><a href="index.html" title="vers L'Accueil">Accueil</a></li>
+        <li><a href="tableau.html" title="vers Le Tableau">Tableau</a></li>
+        <li><a href="contact.html" title="vers Le Contact">Contact</a></li>
     </ul>
    <img src="src/img/promotion.jpg" alt="Promotion"> 
    <!--contact-->
@@ -25,35 +25,60 @@
    <fieldset>
       
        <legend>Vos coordonnées</legend>
-    <label for="nom">Votre nom* :</label><input type="text" name="nom" id="?" size="30"><br>
-    <label for="prénom"> Votre prénom* :</label><input type="text" name="prénom" id="prénom" size="30"><br>
+    <label for="nom"> Votre nom* :</label>
+    <input type="text" name="nom" id="nom"><br>
+
+    <label for="prenom"> Votre prénom* :</label>
+    <input type="text" name="prénom" id="prenom"><br>
 
     Sexe* :<input type="radio" name="Sexe" value="Féminin"> Féminin
            <input type="radio" name="Sexe" value="Masculin"> Masculin<br>
-    <label for="date de naissance">Date de naissance*:</label>
-    <select id="nom" size="1" maxlenght="25">
-        <option value="jj/mm/aaaa">jj/mm/aaaa</option> 
-        <option value="jj/mm/aaaa">jj/mm/aaaa</option>
-        <option value="jj/mm/aaaa">jj/mm/aaaa</option>  
-    </select><br>
-    <label for="code postal">Code postal*:</label><input type="text" name="Code postal" size="20" maxlength="25"><br>
-    <label for="adresse">Adresse*:</label><input type="text" name="Adresse" size="20" maxlenght="20"><br>
-    <label for="ville">Ville*:</label><input type="text" name="Ville" size="20" maxlength="20"><br>
-    <label for="email">Email*:</label><input type="text" name="email" id="nom" size="23" maxlength="20" placeholder="dave.loper@afpa.fr">
-   </fieldset> 
+
+    <label for="date">Date de naissance*:</label>
+    <input type="date" name="date de naissance" id="date" required title="jj/mm/aaaa"><br>
+
+    <label for="code">Code postal*:</label>
+    <input type="number" name="Code postal" id="code" required title="code postal"><br>
+
+    <label for="adresse"> Adresse*:</label>
+    <input type="text" name="Adresse" id="adresse" required title="adresse"><br>
+
+    <label for="ville">Ville*:</label>
+    <input type="text" name="Ville" id="ville" required title="ville"><br>
+
+    <label for="email">Email*:</label>
+    <input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr">
+
+   </fieldset> <br>
+
    <fieldset>
        <legend>Votre demande</legend>
-       <label for="sujet">Sujet* :</label>
-       <select id="nom" size="1" maxlenght="25">
+       <label for="sujet"> Sujet* :</label><select id="sujet" size="1">
            <option value="Veuillez sélectionner un sujet">Veuillez sélectionner un sujet</option>
-           
-   </fieldset>
+           <option value="Mes commandes">Mes commandes</option>
+           <option value="Question sur un produit">Question sur un produit</option>
+           <option value="Réclamation">Réclamation</option>
+           <option value="Autres">Autres</option>
+       </select><br>
+       <label for="vosquestions"> Vos questions* :</label>
+       <textarea id="vosquestions"></textarea>    
+   </fieldset><br>
+
+   <input type="checkbox" name="texte" value="j'accepte le traitement informatique de ce formulaire">* J'accepte le traitement informaitique de ce formulaire
+
+   <div>
+       <button>Envoyer</button>
+       <button>Annuler</button>
+   </div>
+
+       <hr>
+
    </form> 
-    
+
    <ul>
-    <li><a href="#" title="Mentions Légales">Mentions Légales</a></li>
-    <li><a href="#" title="Horaires">Horaires</a></li>
-    <li><a href="#" title="Plan du site">Plan du site</a> </li>
+        <li><a href="#" title="Mentions Légales">Mentions Légales</a></li>
+        <li><a href="#" title="Horaires">Horaires</a></li>
+        <li><a href="#" title="Plan du site">Plan du site</a> </li>
     </ul>
 </body>
 </html>
