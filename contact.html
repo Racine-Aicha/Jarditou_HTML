@@ -20,20 +20,40 @@
    <h2>Contact</h2>
   
    <hr> 
-   
+   <form>
+   <p> * Ces zones sont obligatoires</p>
    <fieldset>
       
        <legend>Vos coordonnées</legend>
-    <label for="nom">Votre nom:</label><input type="text" name="nom" id="?" size="10">
-    <label for="prénom"> Votre prénom:</label><input type="text" name="prénom" id="prénom" size="10">
+    <label for="nom">Votre nom* :</label><input type="text" name="nom" id="?" size="30"><br>
+    <label for="prénom"> Votre prénom* :</label><input type="text" name="prénom" id="prénom" size="30"><br>
 
-   </fieldset>  
-
-      
+    Sexe* :<input type="radio" name="Sexe" value="Féminin"> Féminin
+           <input type="radio" name="Sexe" value="Masculin"> Masculin<br>
+    <label for="date de naissance">Date de naissance*:</label>
+    <select id="nom" size="1" maxlenght="25">
+        <option value="jj/mm/aaaa">jj/mm/aaaa</option> 
+        <option value="jj/mm/aaaa">jj/mm/aaaa</option>
+        <option value="jj/mm/aaaa">jj/mm/aaaa</option>  
+    </select><br>
+    <label for="code postal">Code postal*:</label><input type="text" name="Code postal" size="20" maxlength="25"><br>
+    <label for="adresse">Adresse*:</label><input type="text" name="Adresse" size="20" maxlenght="20"><br>
+    <label for="ville">Ville*:</label><input type="text" name="Ville" size="20" maxlength="20"><br>
+    <label for="email">Email*:</label><input type="text" name="email" id="nom" size="23" maxlength="20" placeholder="dave.loper@afpa.fr">
+   </fieldset> 
+   <fieldset>
+       <legend>Votre demande</legend>
+       <label for="sujet">Sujet* :</label>
+       <select id="nom" size="1" maxlenght="25">
+           <option value="Veuillez sélectionner un sujet">Veuillez sélectionner un sujet</option>
+           
+   </fieldset>
+   </form> 
+    
    <ul>
-       <li><a href="#" title="Mentions Légales">Mentions Légales</a></li>
-       <li><a href="#" title="Horaires">Horaires</a></li>
-       <li><a href="#" title="Plan du site">Plan du site</a> </li>
-   </ul>
+    <li><a href="#" title="Mentions Légales">Mentions Légales</a></li>
+    <li><a href="#" title="Horaires">Horaires</a></li>
+    <li><a href="#" title="Plan du site">Plan du site</a> </li>
+    </ul>
 </body>
 </html>
